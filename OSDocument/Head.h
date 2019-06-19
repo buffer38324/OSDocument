@@ -3,12 +3,15 @@
 #include<string>
 #include<map>
 #include<vector>
+#include<queue>
+
+
 
 struct Root_file //根目录
 {
 	int ID;
 	//其他信息
-	string Name; //文件名字
+	string File_name;//文件名称
 	string Type; //文件类型
 	int Length; //文件大小
 	int Limit[7]; //权限
@@ -18,7 +21,9 @@ struct Root_file //根目录
 	int File_address[100]; //文件占用块数
 };
 
-extern vector<Root_file> Base_table;
+
+
+
 
 struct Files
 {
@@ -27,29 +32,28 @@ struct Files
 	int Father; //父节点目录
 };
 
+
 struct Block
 {
 	int n;	//存放空闲块的个数
 	int free[50];	//存放空闲块的地址
 	int a;	//该块是否被占用
 	char content[100];	//每个字节存放的字符
-};
-extern Block Memory[500];
+}Memory[500];
 
 struct Block_super
 {
 	int n; //空闲快个数
 	int free[50]; //空闲块地址
-};
-extern Block_super Super_block;
+}Super_block;
 
 struct User
 {
 	string Name; //用户名
 	string Pwd; //密码
-};
-extern User Users[8];
+}Users[8];
 
-void callback(int num);
-void init_super_block(int Free_size, int Memory_size);
-int allocate();
+
+extern int BOOT_i = 0;
+
+queue<int> Reuse_file;
