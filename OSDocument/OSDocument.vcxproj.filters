@@ -23,5 +23,11 @@
     <ClCompile Include="OS_Flies.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="allocate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -22,6 +22,8 @@
     <ClInclude Include="Head.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="allocate.cpp" />
+    <ClCompile Include="file.cpp" />
     <ClCompile Include="OS_Flies.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
