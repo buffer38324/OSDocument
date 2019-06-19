@@ -3,7 +3,7 @@
 #include<string>
 #include<map>
 #include<vector>
-using namespace std;
+
 
 
 struct Root_file //根目录
@@ -20,6 +20,11 @@ struct Root_file //根目录
 };
 
 vector<Root_file> Base_table;
+
+
+
+
+
 
 
 struct Files

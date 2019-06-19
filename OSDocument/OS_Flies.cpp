@@ -1,7 +1,10 @@
-#include<iostream>
 #include"Head.h"
 
 using namespace std;
 
 
-void 
+void File_Create() {
+	if (Base_table.size()) {
+
+	}
+}
