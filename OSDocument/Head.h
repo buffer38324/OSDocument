@@ -3,6 +3,7 @@
 #include<string>
 #include<map>
 #include<vector>
+#include<queue>
 
 
 
@@ -10,6 +11,7 @@ struct Root_file //根目录
 {
 	int ID;
 	//其他信息
+	string File_name;//文件名称
 	string Type; //文件类型
 	int Length; //文件大小
 	int Limit[7]; //权限
@@ -18,10 +20,6 @@ struct Root_file //根目录
 	Files* Address = NULL; //总表位置（文件夹情况）
 	int File_address[100]; //文件占用块数
 };
-
-vector<Root_file> Base_table;
-
-
 
 
 
@@ -56,5 +54,6 @@ struct User
 }Users[8];
 
 
+extern int BOOT_i = 0;
 
-
+queue<int> Reuse_file;
