@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClInclude Include="Head.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OS_Flies.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{166EDAB0-1F2E-43B3-BF16-E94C4C8046EB}</ProjectGuid>
