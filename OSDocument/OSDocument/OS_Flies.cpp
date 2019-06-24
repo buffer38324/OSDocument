@@ -8,7 +8,9 @@ extern vector<Root_file> Base_table;
 void File_Creat(Root_file a) {//根目录创建
 	
 	if (Base_table.size() == 0) {//初始化根目录
-		
+		Root_file test;
+		test.ID = 0;
+		Base_table.push_back(test);
 		if (Reuse_file.empty() == 1) {
 			Base_table.push_back(a);
 		}
